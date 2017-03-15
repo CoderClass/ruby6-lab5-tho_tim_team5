@@ -1,0 +1,10 @@
+<%= form_for @message do |f| %>
+  <%= f.text_field :body, placeholder: 'Message' %>
+  <%= f.submit "Send" %>
+<% end %>
+
+<div class="messages">
+
+  <%= render @messages %>
+
+</div>
